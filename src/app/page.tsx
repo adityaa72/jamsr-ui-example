@@ -3,7 +3,13 @@ import { UIStylesProvider } from "@jamsr-ui/styles";
 
 const Home = () => {
   return (
-    <UIStylesProvider input={{ className: "bg-red-500" }}>
+    <UIStylesProvider
+      input={{
+        classNames: {
+          inputWrapper: "group-data-[focused=true]:border-white",
+        },
+      }}
+    >
       <div className="flex flex-col gap-4 items-start">
         <Button>This is a button</Button>
         <Input label="Username" variant="outlined" />
