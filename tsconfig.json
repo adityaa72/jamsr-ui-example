@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "./node_modules/@jamsr-ui/*/dist/*.ts"
+    "node_modules/@jamsr-ui/*/dist/**/*.d.ts"
   ],
   "exclude": ["node_modules"]
 }
